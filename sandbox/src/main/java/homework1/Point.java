@@ -1,4 +1,4 @@
-package ru.learn.chlek;
+package homework1;
 
 public class Point {
     public double x;

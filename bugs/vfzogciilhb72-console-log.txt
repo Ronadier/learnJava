@@ -1,0 +1,4 @@
+:test FAILED
+<ijLog><event type='reportLocation' testReport='/Users/Ronadier/Desktop/LearnJava/learnJava/sandbox/build/reports/tests/test/index.html' /></ijLog>
+<ijLog><event type='beforeSuite'><ijLogEol/>  <test id=':test' parentId=''><ijLogEol/>    <descriptor name='Gradle Test Run :test' className='' /><ijLogEol/>  </test><ijLogEol/></event></ijLog>
+<ijLog><event type='afterSuite'><ijLogEol/>  <test id=':test' parentId=''><ijLogEol/>    <descriptor name='Gradle Test Run :test' className='' /><ijLogEol/>    <result resultType='SUCCESS' startTime='1587673844591' endTime='1587673844606'><ijLogEol/>      <failureType>error</failureType><ijLogEol/>    </result><ijLogEol/>  </test><ijLogEol/></event></ijLog>
