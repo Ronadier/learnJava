@@ -1,4 +1,4 @@
-package ru.chlek.learn.addressbook;
+package ru.chlek.learn.addressbook.model;
 
 public class GroupData {
     private final String name;
