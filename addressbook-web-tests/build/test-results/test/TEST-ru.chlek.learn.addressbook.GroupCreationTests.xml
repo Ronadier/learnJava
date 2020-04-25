@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.chlek.learn.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-25T13:41:37" hostname="MacBook-Pro-mac.local" time="2.831">
+<testsuite name="ru.chlek.learn.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-25T14:57:38" hostname="MacBook-Pro-mac.local" time="2.798">
   <properties/>
-  <testcase name="testGroupCreationTests" classname="ru.chlek.learn.addressbook.GroupCreationTests" time="2.831"/>
+  <testcase name="testGroupCreation" classname="ru.chlek.learn.addressbook.GroupCreationTests" time="2.798"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 21303
+  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 34706
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-апр 25, 2020 4:41:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+апр 25, 2020 5:57:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1587822098.547][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587826659.766][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>
