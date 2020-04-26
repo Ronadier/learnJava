@@ -1,4 +1,4 @@
-package ru.chlek.learn.addressbook;
+package ru.chlek.learn.addressbook.tests;
 
 public class ContactData {
     private final String firstname;
