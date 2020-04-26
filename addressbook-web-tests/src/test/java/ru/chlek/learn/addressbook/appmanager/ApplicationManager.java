@@ -12,10 +12,12 @@ public class ApplicationManager {
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private SessionHelper sessionHelper;
+    private ContactHelper contactHelper;
 
     public void init() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        contactHelper = new ContactHelper(wd);
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
@@ -30,9 +32,9 @@ public class ApplicationManager {
         wd.quit();
     }
 
-
-
-
+    public ContactHelper getContactHelper() {
+        return contactHelper;
+    }
 
     public GroupHelper getGroupHelper() {
         return groupHelper;
