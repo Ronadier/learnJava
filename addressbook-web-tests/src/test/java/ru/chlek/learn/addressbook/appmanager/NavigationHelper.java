@@ -12,7 +12,11 @@ public class NavigationHelper extends HelperBase{
     public void gotoGroupPage() {
       click(By.linkText("groups"));
     }
-    public void gotoContact() {
+    public void gotoAddContact() {
         click(By.linkText("add new"));
+    }
+
+    public void gotoEditContact() {
+        click(By.xpath("//img[@alt='Edit']"));
     }
 }

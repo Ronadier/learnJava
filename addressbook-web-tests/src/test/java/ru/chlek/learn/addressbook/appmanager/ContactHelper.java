@@ -10,13 +10,25 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
-  public void createContact(ContactData contactData, By locator) {
+  public void fillContactForm(ContactData contactData) {
       type(By.name("firstname"), contactData.getFirstname());
       type(By.name("lastname"), contactData.getLastmane());
       type(By.name("address"), contactData.getAddress());
       type(By.name("home"), contactData.getHomephone());
       type(By.name("email"), contactData.getEmail());
-      click(locator);
   }
 
+    public void editContact() {
+        click(By.name("update"));
+    }
+
+    public void submitContactCreation() {
+        click(By.xpath("(//input[@name='submit'])[2]"));
+    }
+
+    public void deletionContact() {
+        click(By.name("selected[]"));
+        click(By.xpath("//input[@value='Delete']"));
+        wd.switchTo().alert().accept();
+    }
 }
