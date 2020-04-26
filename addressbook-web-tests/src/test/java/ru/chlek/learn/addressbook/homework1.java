@@ -33,6 +33,7 @@ public class homework1 {
   }
 
   private void goHomeAndLogout() {
+    wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
     wd.findElement(By.linkText("home")).click();
     wd.findElement(By.linkText("Logout")).click();
   }
@@ -53,7 +54,6 @@ public class homework1 {
     wd.findElement(By.name("email")).click();
     wd.findElement(By.name("email")).clear();
     wd.findElement(By.name("email")).sendKeys(contactData.getEmail());
-    wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
   }
 
   private void gotoContact() {
