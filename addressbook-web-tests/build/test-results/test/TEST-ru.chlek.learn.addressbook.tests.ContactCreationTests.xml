@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.chlek.learn.addressbook.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-26T16:39:23" hostname="MacBook-Pro-mac.local" time="1.598">
+<testsuite name="ru.chlek.learn.addressbook.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-26T16:42:41" hostname="MacBook-Pro-mac.local" time="1.586">
   <properties/>
-  <testcase name="testContactCreation" classname="ru.chlek.learn.addressbook.tests.ContactCreationTests" time="1.598"/>
+  <testcase name="testContactCreation" classname="ru.chlek.learn.addressbook.tests.ContactCreationTests" time="1.586"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 38449
+  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 28356
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-апр 26, 2020 7:39:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+апр 26, 2020 7:42:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.chlek.learn.addressbook.model.ContactData;
 
 public class homework1 {
   private WebDriver wd;
