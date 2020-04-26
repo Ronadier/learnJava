@@ -1,7 +1,8 @@
-package ru.chlek.learn.addressbook.tests;
+package ru.chlek.learn.addressbook.tests1;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import ru.chlek.learn.addressbook.appmanager1.ApplicationManager1;
 
 public class TestBase1 {
 
