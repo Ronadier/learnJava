@@ -8,6 +8,6 @@ public class homeworkTest1 {
     public void testDistance() {
         Point a = new Point(1,5);
         Point b = new Point(1,3);
-        Assert.assertEquals(a.distance(a, b), 2);
+        Assert.assertEquals(a.distance(b), 2);
     }
 }
