@@ -38,7 +38,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void returnToMainPage() {
-        click(By.linkText("home page"));
+        click(By.linkText("home"));
     }
 
     public void createContact(ContactData contact) {
@@ -60,5 +60,9 @@ public class ContactHelper extends HelperBase {
         } catch (NoSuchElementException e) {
             return false;
         }
+    }
+
+    public int getContactCount() {
+        return wd.findElements(By.name("selected[]")).size();
     }
 }
