@@ -3,7 +3,11 @@ package ru.chlek.learn.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import ru.chlek.learn.addressbook.model.ContactData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -13,7 +17,7 @@ public class ContactHelper extends HelperBase {
 
     public void fillContactForm(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
-        type(By.name("lastname"), contactData.getLastmane());
+        type(By.name("lastname"), contactData.getLastname());
         type(By.name("address"), contactData.getAddress());
         type(By.name("home"), contactData.getHomephone());
         type(By.name("email"), contactData.getEmail());
@@ -67,5 +71,18 @@ public class ContactHelper extends HelperBase {
 
     public void selectContact(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
+    }
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = wd.findElements(By.cssSelector("tr"));
+        for (WebElement element : elements) {
+            String firstname = element.getText();
+            String lastname = element.getText();
+            String id = element.findElement(By.tagName("input")).getAttribute("id");
+            ContactData contact = new ContactData(id,"test1", "test2", null, null, null);
+            contacts.add(contact);
+        }
+        return contacts;
     }
 }

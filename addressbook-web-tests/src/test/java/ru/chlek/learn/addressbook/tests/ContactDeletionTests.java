@@ -4,20 +4,26 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.chlek.learn.addressbook.model.ContactData;
 
+import java.util.List;
+
 public class ContactDeletionTests extends TestBase {
     @Test
     public void testContactDeletion() {
-        int before = app.getContactHelper().getContactCount();
         if (! app.getContactHelper().isThereAContact()){
             app.getContactHelper().createContact(new ContactData("test1", "test2", "test3", "test4", "test5"));
         }
-        app.getContactHelper().selectContact(before - 1);
+        List<ContactData> before = app.getContactHelper().getContactList();
+        System.out.println(before.size());
+        app.getContactHelper().selectContact(before.size() - 2);
         app.getContactHelper().deletionContact();
         app.getContactHelper().returnToMainPage();
-        int after = app.getContactHelper().getContactCount();
-        System.out.println(before);
-        System.out.println(after);
-        Assert.assertEquals(after, before - 1);
+        List<ContactData> after = app.getContactHelper().getContactList();
+        System.out.println(before.size());
+        System.out.println(after.size());
+        Assert.assertEquals(after.size(), before.size() - 1);
+
+        before.remove(before.size() - 2);
+        Assert.assertEquals(before, after);
 
     }
 }

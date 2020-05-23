@@ -44,7 +44,7 @@ public class homework1 {
     wd.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
     wd.findElement(By.name("lastname")).click();
     wd.findElement(By.name("lastname")).clear();
-    wd.findElement(By.name("lastname")).sendKeys(contactData.getLastmane());
+    wd.findElement(By.name("lastname")).sendKeys(contactData.getLastname());
     wd.findElement(By.name("address")).click();
     wd.findElement(By.name("address")).clear();
     wd.findElement(By.name("address")).sendKeys(contactData.getAddress());
